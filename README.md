@@ -40,6 +40,7 @@ For example, I could quickly see how much each product sold in different regions
 This process allowed for efficient data exploration and summary, helping to derive actionable insights from the sales data.
 
 
+![cap Ts](https://github.com/user-attachments/assets/efb4ced9-130f-46b4-b31c-148715c91734)
 
 
 
