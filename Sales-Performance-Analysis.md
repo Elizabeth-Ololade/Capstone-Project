@@ -18,10 +18,10 @@ Customer ID: Customer ID is a unique identifier assigned to each customer in a d
 Order ID is a unique identifier assigned to each purchase or transaction made by a customer.
 
 ## Basic statistics about the dataset:
-- Total Sales: #345,000
-- Total Revenue: #10,587,500
-- Number of Region:4
-- Total Number of Items:6
+- Total Sales: #68,461
+- Total Revenue: #2,101,090
+- Number of Regions: 4
+- Total Number of Items: 6
 - The dataset spans from 2023-2024
 
 ## Methodology
@@ -32,17 +32,20 @@ Data Preparation: I ensured the sales data was clean and structured, with column
 In Excel, I selected the range of my data and then inserted a pivot table.
 I set the rows to include Product and Region, and the columns to reflect Month.
 
-![Cap Rp](https://github.com/user-attachments/assets/33c54c7b-f002-422d-9728-174b7ade69c6)
+![CAP EX](https://github.com/user-attachments/assets/08ff925f-62a3-48a3-80da-4ba4e1c4e89c)
+
 
 I used the Values area to summarize Total Sales, applying the sum function to aggregate sales figures.
 
 Analyzing the Results: The pivot table provided a clear summary of total sales by product, region, and month. 
 
-![cap Ts](https://github.com/user-attachments/assets/efb4ced9-130f-46b4-b31c-148715c91734)
+![Ts by p](https://github.com/user-attachments/assets/87983635-7654-477c-8eae-53762d51b2de)
 
-![Cap Rs](https://github.com/user-attachments/assets/3bb3d02a-d1aa-4a5d-9d11-7fe2320be1e9)
 
-![Cap Rm](https://github.com/user-attachments/assets/131fce15-0b98-457e-ac1b-d38787a40be4)
+![Ts by R](https://github.com/user-attachments/assets/37d6e942-dd5f-439e-8cae-0dd697952c94)
+
+![Ts by M](https://github.com/user-attachments/assets/e5fd944f-6a17-4e8d-b5eb-07960cf24dc6)
+
 
 For example, I could quickly see how much each product sold in different regions across various months, which helped identify trends and performance metrics.
 
@@ -70,10 +73,10 @@ For example, I could quickly see how much each product sold in different regions
 - Average Sales for Jacket: 140
 - Average Sales for Gloves: 200
 
-- Total Revenue for North Region: 1950000
-- Total Revenue for South Region: 4675000
-- Total Revenue for East Region: 2450000
-- Total Revenue for West Region: 1512500
+- Total Revenue for North Region: 387,000
+- Total Revenue for South Region: 927,820
+- Total Revenue for East Region: 485,925
+- Total Revenue for West Region: 300,345
 
 
 
@@ -82,9 +85,13 @@ For example, I could quickly see how much each product sold in different regions
 ### SQL Query
 The following SQL query was used to calculate the total quantity sold for each product in the dataset:
 
+SELECT Product, SUM(Quantity) AS Sum_of_Quantity
+FROM [dbo].[Sales data I]
+GROUP BY Product
 
 ### Result
-![Cap sql p](https://github.com/user-attachments/assets/cab34651-79c4-4e8b-a18a-7f8bc0c4111c)
+![CAP Q1](https://github.com/user-attachments/assets/5a7e3151-c592-4116-9f23-e39fece46e59)
+
 
 This query aggregates the sales data to provide the total quantity sold for each product.
 By grouping the results by product name, we can see how many units were sold for each item.
@@ -101,15 +108,17 @@ The output displays each product along with its total quantity sold, offering va
 ### SQL Query
 The following SQL query was used to determine the highest revenue-generating products in the dataset:
 
-SELECT product, MAX(Total_Revenue) AS highest_selling_product
-FROM [dbo].[LITA Capstone Dataset5]
-GROUP BY product;
+SELECT Top 1 Product, SUM(Quantity) AS highest_selling_product
+FROM [dbo].[Sales data I]
+GROUP BY Product
+ORDER BY highest_selling_product  DESC
 
 ### Result
-![Cap sql m](https://github.com/user-attachments/assets/6a496148-a5b3-43e0-8205-963031f948f9)
+![CAP Q2](https://github.com/user-attachments/assets/5410b5cf-9428-4d78-8f09-990e549e8c83)
 
-This query groups the sales data by product and retrieves the maximum total revenue for each product.
-The output provides insights into which products are performing best in terms of sales.
+
+This query groups the sales data by product and retrieves the Top 1 highest selling product.
+The output provides insights of the product performing best in terms of sales.
 
 #### Results Interpretation
 The results indicate the highest revenue-generating products, which can help in:
@@ -127,61 +136,63 @@ sales performance across various dimensions such as products, regions, and time 
 - **Visualization Software**:  Power BI 
 - **Data Source**: Capstone Sales Data
   
-![Sales-DB](https://github.com/user-attachments/assets/3644762e-4b9e-4380-9e81-4c4906e9c87a)
+![CAP DB](https://github.com/user-attachments/assets/604cdfe9-10e9-411a-afcb-2a29bca9514e)
 
-### Total Revenue by Product Visualization
 
-The visualization of total revenue by product provides a clear and concise view of how different products contribute to overall revenue. 
+### Total Sales by Product Visualization
+
+The visualization of total sales by product provides a clear and concise view of how different products contribute to overall revenue. 
 This analysis helps sellers understand which products are performing well and which may need additional focus or support.
 
 Visualization Type
-The total revenue by product is presented using cluster column chart. 
-This type of chart is effective for comparing the revenue generated by each product, making it easy to identify top performers at a glance.
+The total sales by product is presented using cluster column chart. 
+This type of chart is effective for comparing the quantity sold per product, making it easy to identify top performers at a glance.
 
-![Cap  R by P](https://github.com/user-attachments/assets/bcb6e5f1-819c-4f34-89b5-695f3fddc22b)
+![CAP T S](https://github.com/user-attachments/assets/e358a8b9-3c60-4eb2-9351-22c07ef8d098)
+
 
 ### **Explanation of the Chart** 
 X-Axis: Represents the different products available in the dataset.
 
-Y-Axis: Represents the total revenue generated by each product.
+Y-Axis: Represents the sum of quantity sold per product.
 
-Bars: Each bar corresponds to a product, with the height indicating the total revenue. 
-Taller bars signify higher revenue, while shorter bars indicate lower revenue.
+Bars: Each bar corresponds to a product, with the height indicating the sum of quantity sold. 
+Taller bars signify higher quantity, while shorter bars indicate lower quantity. That is, the hat has the highest quantity of sales.
 
  ### **Insights**
  
-From the total revenue visualization, several key insights can be derived:
--  Top Performers: Identify which products generate the most revenue. These are likely your best-selling items and should be prioritized in marketing and inventory management.
--  Underperforming Products: Products with low revenue can be analyzed further to understand why they are not performing as expected.
+From the total sales visualization, several key insights can be derived:
+-  Top Performers: Identify which products has the highest sales. These are best-selling items and should be prioritized in marketing and inventory management.
+-  Underperforming Products: Products with low sales can be analyzed further to understand why they are not performing as expected.
    This may lead to decisions regarding promotions, pricing strategies, or even product discontinuation.
--  Revenue Trends: By comparing this chart to historical data, one can assess how product revenue has changed over time, providing insights into market trends and consumer preferences.
+-  Sales Trends: By comparing this chart to historical data, one can assess how product sales has changed over time, providing insights into market trends and consumer preferences.
 
-### Region by Total Sales
+### Region Generating Highest Revenue 
 
 This visualization allows business owners to quickly compare sales performance across different regions.
 It helps identify which regions are performing well and which may need attention.
 
 Visualization Type
-The region by total sales is presented using Stacked column chart.
+The region generating highest revenue  is presented using clustered column chart.
 The chart can highlight high-performing regions that might be leveraged for expansion or low-performing regions that may require targeted interventions.
 
-![Cap R by s](https://github.com/user-attachments/assets/11ed4b62-8232-4154-ae3c-6a2f51b6c365)
+![CAP H Rev](https://github.com/user-attachments/assets/203739b4-5e08-403e-8127-fc6c47a3644b)
+
 
 ### **Explanation of the Chart** 
-X-Axis: Represents the quantity of goods sold available in the dataset.
 
 Y-Axis: Represents the sum of total revenue generated by each product.
 Legend: Represents the various region of customers.
 
-Each segment in the stacked columns represents a specific product, 
-showing how much revenue each contributes to the total sales. This helps in understanding which products drive revenue and which do not.
+Each segment in the clustered columns represents a specific product, 
+showing how much revenue each  region contributes to the total sales.  The south is the region generating highest revenue compare to other regions.
 
- ### **Insights** 
+### **Insights** 
 From the to visualization, several key insights can be derived:
--  A retail business analysis using a stacked column chart to display total revenue, quantity sold by region, 
+-  A retail business analysis using a clustered column chart to display region generating highest revenue, 
 it will help to understand which region are performing best.
 
--  By leveraging a stacked column chart to represent quantity by total revenue, 
+-  By leveraging a clustered column chart to represent total revenue, 
 businesses can gain valuable insights into their sales dynamics, improve decision-making, and ultimately drive better performance.
 
 
@@ -215,16 +226,17 @@ From the to visualization, several key insights can be derived:
 This visualization clearly illustrate top performing product.
 
 Visualization Type
- A donut chart effectively shows the percentage of total sales or revenue contributed by each top-performing product, 
- making it easy to see which products dominate sales.
+ A donut chart effectively shows the percentage sales  contributed by each product, 
+ making it easy to see which products dominate sales. The top performing product is Hat whch has 23.27% of sales. The total sales for hat is #15,929, approximately #16,000.
  
- ![Cap donut](https://github.com/user-attachments/assets/a4e81fd9-5d1a-46ff-8787-f63970a54440)
+![CAP T P](https://github.com/user-attachments/assets/8cc42451-17d8-474e-b1dd-0565d2ebab55)
+
 
  ### **Explanation of the Chart** 
  
 Legend: Represents Products in the dataset.
 
-Values: Represents the Maximum of total revenue.
+Values: Represents the sum of quantity sold per product.
 
 By limiting the chart to the top-performing products, one can  draw attention to those that are significantly contributing to overall performance, 
 making it easier for business owner to recognize and analyze these key items.
@@ -232,6 +244,17 @@ making it easier for business owner to recognize and analyze these key items.
  ### **Insights** 
 From the to visualization, donut charts are visually engaging and straightforward, 
 making it easy for audiences to grasp the data without needing to interpret complex numerical figures.
+
+### Percentage of Sales per Region
+
+This visualization clearly illustrate percentage of sales made in each region.
+
+Visualization Type
+ A pie  chart effectively shows the percentage sales  contributed by each region, 
+ making it easy to see which region has highest sales. The south has region has the highest persentage of sales, 35.49% which is about #24,298 total sales.
+ 
+ ![CAP %](https://github.com/user-attachments/assets/50db548c-56f3-4633-88b5-939b07a62a25)
+
 
 
 ###Summary
