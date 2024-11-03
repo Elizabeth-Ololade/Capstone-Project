@@ -28,7 +28,8 @@ The primary source of Data used here is the Customer Subscription Data provided.
 -  Total Regions: 4
 -  Total Subscription: 3
 
-   
+## Methodology 
+Data Preparation: I ensured the customer data was clean and structured, with columns for
 
 
 
