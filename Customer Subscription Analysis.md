@@ -21,4 +21,14 @@ The primary source of Data used here is the Customer Subscription Data provided.
 
 
 ## Basic Statistics
-Total Revenue : 149,819,686
+-  Total Revenue: 67,540,175
+-  Total Canceled: 15,175
+-  Total Active: 18,612
+-  Average Subscription Duration: 365
+-  Total Regions: 4
+-  Total Subscription: 3
+
+   
+
+
+
