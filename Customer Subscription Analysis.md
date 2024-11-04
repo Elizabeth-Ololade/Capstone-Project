@@ -1,6 +1,32 @@
 # Customer Subscription Analysis
 
-## Introduction
+[Project Overview](#project-overview)
+
+[Data Source](#data-source)
+
+[Data Fields](#data-fields)
+
+[Basic Statistics](#basic-statistics)
+
+[Methodology](#methodology) 
+
+
+[Excel pivot table](#excel-pivot-table)
+
+
+[SQL Query](#sql-query)
+
+
+[Customer Subscription  Dashboard](#customer-subscription-dashboard)
+
+
+[Subscription Duration Slicer](#subscription-duration-slicer)
+
+[Key Findings](#key-findings)
+
+[Insights and Recommendations](#insights-and-recommendation)
+
+### Project Overview
 This project involves analyzing customer data for a subscription service to identify 
 segments and trends. The goal is to understand customer behavior, track subscription types, 
 and identify key trends in cancellations and renewals. The final deliverable is a Power BI 
@@ -48,20 +74,22 @@ with the help of the pivot table, it is easy to interprete the data. I can see t
 
 The following SQL query was used to calculate The total number of subscribers from each region in the dataset:
 
-SELECT Region, COUNT(customerID) AS total_customers
+```SELECT Region, COUNT(customerID) AS total_customers
 FROM[dbo].[CustomerData]
 GROUP BY region;
+```
 
 ### Result 
 ![CAP Sql1](https://github.com/user-attachments/assets/b00b49f5-d741-4ec6-a1f0-2502b4ed7ecc)
 
 Total Number of cancellation per region
-
+```
 SELECT Region, COUNT(CustomerID) AS CancellationCount
 FROM [dbo].[CustomerData]
 WHERE Canceled = 1
 GROUP BY Region
 ORDER BY CancellationCount DESC
+```
 
 ### Result
 ![Cap  Sql2](https://github.com/user-attachments/assets/b5ca6ad1-62c5-48a6-90b8-5a39d2c16f9c)
@@ -69,12 +97,12 @@ ORDER BY CancellationCount DESC
 
 Total Number of Active and Total Number of Cancelled
 
-SELECT 
+```SELECT 
     COUNT(CASE WHEN Canceled = 1 THEN 1 END) AS TotalCanceledSubscriptions,
     COUNT(CASE WHEN Canceled = 0 THEN 0 END) AS TotalActiveSubscriptions
 FROM 
     CustomerData;
-    
+```
 ### Result
 ![Cap  Sql3](https://github.com/user-attachments/assets/b1151de4-29f5-4b0f-b2cf-c187b74841c0)
 
