@@ -136,7 +136,8 @@ sales performance across various dimensions such as products, regions, and time 
 - **Visualization Software**:  Power BI 
 - **Data Source**: Capstone Sales Data
   
-![CAP DB](https://github.com/user-attachments/assets/604cdfe9-10e9-411a-afcb-2a29bca9514e)
+![Cap S  DB1](https://github.com/user-attachments/assets/ad1c3481-d7a1-4b5a-af7b-347c9b72fc69)
+
 
 
 ### Total Sales by Product Visualization
