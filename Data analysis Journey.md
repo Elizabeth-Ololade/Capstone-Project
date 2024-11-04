@@ -1,14 +1,14 @@
 # LITA-Bootcamp-Documentation
 
-## Project Overview
+[Project Overview](#project-overview)
 
-###  Tools
+ [Tools](#tools)
 
-### MS Functions Exploration
+[MS Functions Exploration](#ms-function-exploration)
 
-### Structured Query Language
+ [Structured Query Language](#structured-query-language)
 
-### SQL Comparison Operator
+[SQL Comparison Operator](#sql-comparison-operator)
 
 ### Data analysis Overview
 In an era where vast amounts of data are generated every day—from customer interactions and social media to scientific research and market trends—data analysis serves as a bridge between raw data and actionable insights. By employing various techniques, analysts can transform complex datasets into clear visualizations, highlight key trends, and identify correlations that might otherwise go unnoticed.
@@ -19,7 +19,8 @@ The process typically begins with data collection, followed by cleaning and expl
 There are numerous tools available for data analysis, each catering to different needs and expertise levels.Here are the tools utilized during the training:
 
    1 Spreadsheet Software
-Microsoft Excel [ Download Here ].( https:\www.microsoft.com). Widely used for basic data analysis, visualization, and pivot tables
+Microsoft Excel [ Download Here ].( https:\www.microsoft.com).
+Widely used for basic data analysis, visualization, and pivot tables
 
   2 Data Visualization Tools
 -  Power BI: A Microsoft tool that integrates with other Microsoft products, offering robust reporting features.
