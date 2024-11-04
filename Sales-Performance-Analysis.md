@@ -1,5 +1,32 @@
 # Sales Performance Analysis
-## Introduction
+
+[Project Overview](#project-overview)
+
+[Data Source](#data-source)
+
+[Data Fields](#data-fields)
+
+[Basic statistics of dataset](#basic-statistics-of-dataset)
+
+[Methodology](#methodology)
+
+[Excel](#excel)
+
+[Metrics Calculated](#metrics-calculated)
+
+[SQL Query](#sql-query)
+
+[Sales Dashboard](#sales-dashboard)
+
+[Monthly and Yearly Sales Trend](#monthly-yearly-sales-trend)
+
+[Region Generating Highest Revenue](#region-generating-highest-revenue) 
+
+[Top Performing Product](#top-performing-product)
+
+[Summary](#summary)
+
+## Project Overview
 This project presents a comprehensive analysis of the sales performance of a retail store. 
 By examining sales data, we aim to identify key insights into top-selling products, regional performance, and monthly sales trends.
 The analysis will be visualized through an interactive Power BI dashboard, providing a clear and engaging way to interpret the data,
@@ -85,9 +112,10 @@ For example, I could quickly see how much each product sold in different regions
 ### SQL Query
 The following SQL query was used to calculate the total quantity sold for each product in the dataset:
 
-SELECT Product, SUM(Quantity) AS Sum_of_Quantity
+```SELECT Product, SUM(Quantity) AS Sum_of_Quantity
 FROM [dbo].[Sales data I]
 GROUP BY Product
+```
 
 ### Result
 ![CAP Q1](https://github.com/user-attachments/assets/5a7e3151-c592-4116-9f23-e39fece46e59)
@@ -108,10 +136,11 @@ The output displays each product along with its total quantity sold, offering va
 ### SQL Query
 The following SQL query was used to determine the highest revenue-generating products in the dataset:
 
-SELECT Top 1 Product, SUM(Quantity) AS highest_selling_product
+```SELECT Top 1 Product, SUM(Quantity) AS highest_selling_product
 FROM [dbo].[Sales data I]
 GROUP BY Product
 ORDER BY highest_selling_product  DESC
+```
 
 ### Result
 ![CAP Q2](https://github.com/user-attachments/assets/5410b5cf-9428-4d78-8f09-990e549e8c83)
