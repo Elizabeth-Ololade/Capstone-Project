@@ -50,11 +50,13 @@ Exploring Microsoft Excel functions can significantly enhance your data analysis
 ### Structured Query Language (SQL)
 SQL is a powerful programming language designed for managing and manipulating relational databases. It serves as the standard language for interacting with databases, allowing users to perform a wide range of operations, from querying data to updating and managing database structures. SQL enables users to retrieve specific data from databases using queries. The most common command for this is SELECT, which allows you to specify the columns and tables from which to extract data.
 
-select * from employee
+```select * from employee
 where salary >= 50,000
+```
 
 SQL Comparison Operator
 SQL comparison operators are essential tools used in queries to compare values and filter data based on specified conditions.
 These operators allow you to create conditions that can be evaluated as true or false, enabling you to refine your queries and retrieve specific datasets from a database.
 
 - SQL operator
+![SQL operator](https://github.com/user-attachments/assets/486e8130-8710-4e2d-9031-511eb539523c)
