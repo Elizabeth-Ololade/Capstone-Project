@@ -9,7 +9,7 @@ This project consists of four main components:
 
 
 
-# Sales Performance Analysis
+#  Customer Subscription Analysis
 
 [Project Overview](#project-overview)
 
