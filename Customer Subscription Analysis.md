@@ -29,7 +29,128 @@ The primary source of Data used here is the Customer Subscription Data provided.
 -  Total Subscription: 3
 
 ## Methodology 
-Data Preparation: I ensured the customer data was clean and structured, with columns for
+Data Preparation: I ensured the sales data was clean and structured, with columns for Subscription Type, region, Revenue, Subscription Pattern.
+
+-  Creating the Pivot Table:
+In Excel, I selected the range of my data and then inserted a pivot table. I set the rows to include Subscription Type, Value to reflect the revenue and the columns to reflect Region.
+
+![Cap cus ex](https://github.com/user-attachments/assets/84d56fae-098a-4b0a-b501-6be8d8b1afb1)
+
+The breakdown using Excel pivot table;
+
+![Cap ex1](https://github.com/user-attachments/assets/6f138d48-13e9-4e21-ae4a-577ddd7d6fc1)
+
+![Cap Ex2](https://github.com/user-attachments/assets/7117c851-af94-4596-b90e-c5686419c7bf)
+
+with the help of the pivot table, it is easy to interprete the data. I can see the sum of revenue genarated from each subscription type, from each region and the number of subscribers per subscription at a glance.
+
+## SQL Query
+
+The following SQL query was used to calculate The total number of subscribers from each region in the dataset:
+
+SELECT Region, COUNT(customerID) AS total_customers
+FROM[dbo].[CustomerData]
+GROUP BY region;
+
+### Result 
+![CAP Sql1](https://github.com/user-attachments/assets/b00b49f5-d741-4ec6-a1f0-2502b4ed7ecc)
+
+Total Number of cancellation per region
+
+SELECT Region, COUNT(CustomerID) AS CancellationCount
+FROM [dbo].[CustomerData]
+WHERE Canceled = 1
+GROUP BY Region
+ORDER BY CancellationCount DESC
+
+### Result
+![Cap  Sql2](https://github.com/user-attachments/assets/b5ca6ad1-62c5-48a6-90b8-5a39d2c16f9c)
+
+
+Total Number of Active and Total Number of Cancelled
+
+SELECT 
+    COUNT(CASE WHEN Canceled = 1 THEN 1 END) AS TotalCanceledSubscriptions,
+    COUNT(CASE WHEN Canceled = 0 THEN 0 END) AS TotalActiveSubscriptions
+FROM 
+    CustomerData;
+    
+### Result
+![Cap  Sql3](https://github.com/user-attachments/assets/b1151de4-29f5-4b0f-b2cf-c187b74841c0)
+
+##** Customer Subscription  Dashboard**
+This Customer subscription dashboard provides a visual representation of key customer segments, 
+cancellations, and subscription trends. It also Include slicers for interactive analysis
+
+### Tools Used
+-  Visualization Software: Power BI
+-  Data Source: Capstone Customer Data
+
+![Cap  Cus Db](https://github.com/user-attachments/assets/a5d6800a-51c3-44d7-9720-35edc7163c01)
+
+
+
+**Subscription Type by Subscription Status**
+The subscription status encompasses both active and canceled subscriptions. The visualization of subscription types by status offers a clear interpretation, indicating that basic subscribers represent the largest group, yet they also have the highest cancellation rates.
+
+![Cap  typ by status](https://github.com/user-attachments/assets/261d9a4a-9b46-48c9-bcc5-1e6d114bff0f)
+
+**Total Active by Subscription Type**
+The visualization reveals that basic subscribers account for 63.69% of the total active subscribers, while premium subscribers make up 18.17%.
+
+![CAP ACT](https://github.com/user-attachments/assets/d803ca93-361e-44f2-aa0c-ed5c15f254ab)
+
+**Sum of Revenue by Region**
+
+The visualization indicates that the West region generates the highest revenue, accounting for 24.97%.
+ ![CAP Cus rev](https://github.com/user-attachments/assets/b701f764-ffa6-4d56-a1c9-85d4f3a9b308)
+
+**Sum of Revenue by Subscription Type**
+  The visual demonstrates that basic subscriptions generate the highest revenue, totaling #33,776,735.
+
+![CAP cus rev by typ](https://github.com/user-attachments/assets/bafb2974-812e-4dae-9af2-a2dd07954644)
+
+In this report, I implemented four key slicers to enhance data interaction and allow for tailored insights. Each slicer serves a specific purpose:
+
+-  Subscription Duration Slicer:
+
+This slicer allows you to filter the data based on the duration of subscriptions. ( 365/366 days)
+
+-  Subscription Type Slicer:
+
+With this slicer, you can filter the report by different subscription types (e.g., Basic, Premium, and Standard). This functionality helps to focus on particular segments of  subscriber base, making it easier to compare performance metrics across different types and identify opportunities for growth or improvement in specific areas.
+
+-  Subscription Start Date Slicer:
+
+This slicer allows to filter the data based on when subscriptions started by adjusting this slicer. 
+
+-  Subscription End Date Slicer:
+
+Similar to the start date slicer, this one lets you filter based on when subscriptions ended. This is particularly useful for examining churn patterns and understanding the lifecycle of subscriptions, helping to identify common factors that lead to cancellations.
+
+### Benefits of Using Slicers
+By utilizing these slicers, users can interactively refine the data displayed in the report, allowing for a more personalized analysis. You can quickly see how different subscription durations, types, and time frames affect key metrics, leading to deeper insights and more informed decision-making.
+
+## Summary of Subscription Metrics Report
+This report provides an analysis of key metrics to Customer Subscription, highlighting performance across different subscription tiers and regional revenues.
+
+## Key Findings:
+
+Total Revenue: The overall revenue reached #67,540,175, demonstrating strong financial performance.
+Subscriber Distribution: Basic subscriptions constitute the largest segment, accounting for 63.69% of total active subscribers. However, they also exhibit the highest cancellation rates.
+Revenue by Subscription Type: Basic subscribers generate the highest revenue, totaling #33,776,735, followed by premium subscriptions at 18.17%.
+Regional Performance: The West region leads in revenue generation, contributing 24.97% of the total revenue, indicating a potential area for strategic focus.
+
+
+## Insights and Recommendations:
+
+-  Enhance Basic Offerings: Consider improving the basic subscription features to enhance customer satisfaction and retention.
+-  Targeted Marketing Strategies: Focus marketing efforts on promoting the basic subscription, leveraging its popularity to attract new customers.
+-  Upsell Premium Subscriptions: Identify opportunities to upsell premium subscriptions to the existing basic subscriber base.
+-  Retention Efforts: Develop tailored retention strategies for basic subscribers to minimize churn and stabilize revenue.
+-  Feedback and Improvement: Actively seek feedback from subscribers to guide improvements and better align offerings with customer needs.
+
+
 
 
 
