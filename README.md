@@ -11,14 +11,27 @@ This project consists of four main components:
 
 # Sales Performance Analysis
 
-## Data Files 
+[Project Overview](#project-overview)
 
--  Excel File
--  SQL
--  PowerBi
--  
+[Data Source](#data-analysis)
 
+[Data Fields](#data-fields)
 
+[Basic Statistics](#basic-statistics)
+
+[Methodology](#methodology)
+
+[Excel pivot table](#excel-pivot-table)
+
+[SQL Query](#sql-query)
+
+[Customer Subscription Dashboard](customer-subscription-dashboard)
+
+[Subscription Duration Slicer](#subscription-duration-slicer)
+
+[Key Findings](#key-findings)
+
+[Insights and Recommendations](#insights-and-recommendations)
 
 
 
