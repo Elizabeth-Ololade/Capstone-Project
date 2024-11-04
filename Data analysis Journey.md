@@ -1,4 +1,4 @@
-# LITA-Bootcamp-First Documentation
+# LITA-Bootcamp-First-Documentation
 
 [Project Overview](#project-overview)
 
