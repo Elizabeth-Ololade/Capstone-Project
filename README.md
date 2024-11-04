@@ -9,10 +9,18 @@ This project consists of four main components:
 
 
 
-## Description
-A brief overview of what the project is about.
+# Sales Performance Analysis
 
-## Table of Contents
+## Data Files 
+
+-  Excel File
+-  SQL
+-  PowerBi
+-  
+
+
+
+
 
 ## Introduction
 This project presents a comprehensive analysis of the sales performance of a retail store. 
