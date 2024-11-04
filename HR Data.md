@@ -1,7 +1,30 @@
 
-# Introduction
+# HR Employee Attrition Analysis
 
-## HR Employee Attrition Analysis
+[Project Overview](#project-overview)
+
+[Overall Attrition Statistics](#overall-attrition-statistics)
+
+[HR Employee Attrition Tracker Visualization](#hr-employee-attrition-tracker-visualization)
+
+[Attrition Count by Business Travel](#attrition-count-by-business-travel)
+
+[Attrition Count by Department](#attrition-count-by-department)
+
+[Attrition Count by Gender](#attrition-count-by-gender)
+
+[Job Role and Job Satisfaction](#job-role-and-job-satisfaction)
+
+[Recommendations](#recommendation)
+
+
+
+
+
+
+
+
+## Project Overview
 
 Employee attrition is a significant concern for organizations aiming to maintain a stable and engaged workforce. 
 This report examines the attrition rate within an organization, focusing on various factors, including business travel, departmental dynamics,
