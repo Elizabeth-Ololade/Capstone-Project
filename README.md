@@ -22,5 +22,5 @@ This project involves analyzing customer data for a subscription service to iden
 
 This project examines the attrition rate within an organization, focusing on various factors, including business travel, departmental dynamics, educational background, gender, and job satisfaction. By analyzing these aspects, we aim to identify trends and provide actionable insights to enhance employee retention strategies.
 
-# Note: You can find the complete documents for each project in their respective folders.
+# Note: You can find the complete documents for each project in their respective files.
 
