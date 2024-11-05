@@ -18,7 +18,7 @@
 
 [Sales Dashboard](#sales-dashboard)
 
-[Tools Used](tools-used)
+[Tools Used](#tools-used)
 
 [Monthly and Yearly Sales Trend](#monthly-and-yearly-sales-trend)
 
