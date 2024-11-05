@@ -10,20 +10,17 @@
 
 [Methodology](#methodology) 
 
-
-[Excel pivot table](#excel-pivot-table)
+[Excel](#excel)
 
 [SQL Query](#sql-query)
 
+[Customer Subscription Dashboard](#customer-subscription-dashboard)
 
-[Customer Subscription  Dashboard](#customer-subscription-dashboard)
-
-
-[Subscription Duration Slicer](#subscription-duration-slicer)
+[Slicers Exploration](#slicers-exploration)
 
 [Key Findings](#key-findings)
 
-[Insights and Recommendations](#insights-and-recommendation)
+[Insights and Recommendations](#insights-and-recommendations)
 
 ### Project Overview
 This project involves analyzing customer data for a subscription service to identify 
@@ -56,8 +53,9 @@ The primary source of Data used here is the Customer Subscription Data provided.
 ## Methodology 
 Data Preparation: I ensured the sales data was clean and structured, with columns for Subscription Type, region, Revenue, Subscription Pattern.
 
+### Excel
 -  Creating the Pivot Table:
-In Excel, I selected the range of my data and then inserted a pivot table. I set the rows to include Subscription Type, Value to reflect the revenue and the columns to reflect Region.
+   I selected the range of my data and then inserted a pivot table. I set the rows to include Subscription Type, Value to reflect the revenue and the columns to reflect Region.
 
 ![Cap cus ex](https://github.com/user-attachments/assets/84d56fae-098a-4b0a-b501-6be8d8b1afb1)
 
@@ -105,16 +103,16 @@ FROM
 ### Result
 ![Cap  Sql3](https://github.com/user-attachments/assets/b1151de4-29f5-4b0f-b2cf-c187b74841c0)
 
-##** Customer Subscription  Dashboard**
+## **Customer Subscription Dashboard**
 This Customer subscription dashboard provides a visual representation of key customer segments, 
 cancellations, and subscription trends. It also Include slicers for interactive analysis
 
 ### Tools Used
+- Excel: Data cleaning and analysis
+- SQL: Data Aggregation and integrity
 -  Visualization Software: Power BI
--  Data Source: Capstone Customer Data
 
 ![Cap  Cus Db](https://github.com/user-attachments/assets/a5d6800a-51c3-44d7-9720-35edc7163c01)
-
 
 
 **Subscription Type by Subscription Status**
@@ -136,6 +134,8 @@ The visualization indicates that the West region generates the highest revenue, 
   The visual demonstrates that basic subscriptions generate the highest revenue, totaling #33,776,735.
 
 ![CAP cus rev by typ](https://github.com/user-attachments/assets/bafb2974-812e-4dae-9af2-a2dd07954644)
+
+## Slicers Exploration
 
 In this report, I implemented four key slicers to enhance data interaction and allow for tailored insights. Each slicer serves a specific purpose:
 
