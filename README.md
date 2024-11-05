@@ -2,7 +2,7 @@
 
 This project consists of three main components:
  
--  Sales Performance Analysis  [Here](docs/sales-performance-analysis.md)  
+-  Sales Performance Analysis  [Here](docs/sales-performance-analysis.md/README.md)  
 -  Customer Subscription Analysis
 -  HR Data Analysis
 
