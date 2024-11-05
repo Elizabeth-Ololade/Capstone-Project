@@ -54,7 +54,7 @@ The primary source of Data used here is the Sales Data provided by the Store.
 ## Methodology
 Data Preparation: I ensured the sales data was clean and structured, with columns for product, region, month, and sales figures.
 
-##   Excel
+###   Excel
 
 -  Creating the Pivot Table:
   I selected the range of my data and then inserted a pivot table.
@@ -162,8 +162,10 @@ sales performance across various dimensions such as products, regions, and time 
 
 
 ### Tools Used
-- **Visualization Software**:  Power BI 
-- **Data Source**: Capstone Sales Data
+- **Excel**: Data cleaning and summarization
+- **SQL**: Data aggregation and integrity
+- **Visualization Software**: Power BI 
+
   
 ![Cap S  DB1](https://github.com/user-attachments/assets/ad1c3481-d7a1-4b5a-af7b-347c9b72fc69)
 
