@@ -2,7 +2,7 @@
 
 This project consists of three main components:
  
--  Sales Performance Analysis  [Here](docs/sales-performance-analysis.md/README.md)  
+-  Sales Performance Analysis  [Here](capstone-project/tree/master/sales-performance-analysis.md)
 -  Customer Subscription Analysis
 -  HR Data Analysis
 
