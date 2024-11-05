@@ -13,7 +13,6 @@
 
 [Excel pivot table](#excel-pivot-table)
 
-
 [SQL Query](#sql-query)
 
 
