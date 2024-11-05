@@ -6,7 +6,7 @@
 
 [Data Fields](#data-fields)
 
-[Basic statistics of dataset](#basic-statistics-of-dataset)
+[Basic Statistics of Dataset](#basic-statistics-of-dataset)
 
 [Methodology](#methodology)
 
@@ -24,7 +24,7 @@
 
 [Top Performing Product](#top-performing-product)
 
-[Summary](#summary)
+[Summary](summary)
 
 ## Project Overview
 This project presents a comprehensive analysis of the sales performance of a retail store. 
