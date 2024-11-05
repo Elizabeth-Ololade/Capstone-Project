@@ -24,7 +24,7 @@
 
 [Top Performing Product](#top-performing-product)
 
-[Summary](summary)
+[Summary](#summary)
 
 ## Project Overview
 This project presents a comprehensive analysis of the sales performance of a retail store. 
@@ -106,7 +106,6 @@ For example, I could quickly see how much each product sold in different regions
 - Total Revenue for West Region: 300,345
 
 
-
 ## Total Quantity Sold Analysis
 
 ### SQL Query
@@ -166,7 +165,6 @@ sales performance across various dimensions such as products, regions, and time 
 - **Data Source**: Capstone Sales Data
   
 ![Cap S  DB1](https://github.com/user-attachments/assets/ad1c3481-d7a1-4b5a-af7b-347c9b72fc69)
-
 
 
 ### Total Sales by Product Visualization
@@ -285,9 +283,7 @@ Visualization Type
  
  ![CAP %](https://github.com/user-attachments/assets/50db548c-56f3-4633-88b5-939b07a62a25)
 
-
-
-###Summary
+## Summary
 
 In this report, I explored  sales data, uncover key insights such as top-selling products, regional 
 performance, and monthly sales trends. I extracted my data from excel, summarized the data with pivot table,
