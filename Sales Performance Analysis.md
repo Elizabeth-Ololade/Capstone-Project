@@ -18,7 +18,7 @@
 
 [Sales Dashboard](#sales-dashboard)
 
-[Monthly and Yearly Sales Trend](#monthly-yearly-sales-trend)
+[Monthly and Yearly Sales Trend](#monthly-and-yearly-sales-trend)
 
 [Region Generating Highest Revenue](#region-generating-highest-revenue) 
 
