@@ -8,7 +8,6 @@
 
 [Basic statistics of dataset](#basic-statistics-of-dataset)
 
-
 [Methodology](#methodology)
 
 [Excel](#excel)
