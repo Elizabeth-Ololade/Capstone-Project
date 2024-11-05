@@ -156,7 +156,6 @@ The results indicate the highest revenue-generating products, which can help in:
 
 -  Identifying top performers in the market.
 -  Informing strategic business decisions regarding inventory and marketing.
--  Comparing product performance over time to assess trends.
 
 ## Sales Dashboard
 This sales dashboard provides a visual representation of key sales metrics, allowing for quick insights into
@@ -185,9 +184,6 @@ This type of chart is effective for comparing the quantity sold per product, mak
 
 
 ### **Explanation of the Chart** 
-X-Axis: Represents the different products available in the dataset.
-
-Y-Axis: Represents the sum of quantity sold per product.
 
 Bars: Each bar corresponds to a product, with the height indicating the sum of quantity sold. 
 Taller bars signify higher quantity, while shorter bars indicate lower quantity. That is, the hat has the highest quantity of sales.
@@ -251,8 +247,6 @@ From the to visualization, several key insights can be derived:
 
  -  Monthly sales data reveals seasonal trends, helping businesses understand when sales peak or dip
  -  Using a line chart to represent monthly and yearly trends by total sales provides a clear and effective way to analyze sales performance over time.
- -  It enables businesses to identify trends, forecast future sales, and make data-driven decisions, ultimately enhancing their strategic planning efforts.
-
 
 ### Top Performing Product
 
