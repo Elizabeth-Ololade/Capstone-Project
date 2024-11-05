@@ -15,14 +15,7 @@
 
 [Job Role and Job Satisfaction](#job-role-and-job-satisfaction)
 
-
-[Recommendations](#recommendation)
-
-
-
-
-
-
+[Recommendations](#recommendations)
 
 
 ## Project Overview
@@ -40,7 +33,6 @@ educational background, gender, and job satisfaction. By analyzing these aspects
 ## HR Employee Attrition Tracker Visualization
 
 ![HR  DB](https://github.com/user-attachments/assets/5ec723c6-4b5b-4a38-b64c-b00ea8276528)
-
 
 
 ## Attrition Count by Business Travel
@@ -89,8 +81,6 @@ The higher attrition among male employees highlights the need for understanding 
 The relationship between job satisfaction and attrition is critical:
 
 ![At  by satisf](https://github.com/user-attachments/assets/2e73115f-7868-44be-aaf8-25ca308aad25)
-
-
 
 Dissatisfied Employees: 442
 Satisfied Employees: 289
