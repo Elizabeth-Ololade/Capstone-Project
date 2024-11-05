@@ -4,13 +4,13 @@
 
  [Tools](#tools)
 
-[MS Functions Exploration](#ms-function-exploration)
+[MS Functions Exploration](#ms-functions-exploration)
 
  [Structured Query Language](#structured-query-language)
 
 [SQL Comparison Operator](#sql-comparison-operator)
 
-### Data analysis Overview
+### Project Overview
 In an era where vast amounts of data are generated every day—from customer interactions and social media to scientific research and market trends—data analysis serves as a bridge between raw data and actionable insights. By employing various techniques, analysts can transform complex datasets into clear visualizations, highlight key trends, and identify correlations that might otherwise go unnoticed.
 
 The process typically begins with data collection, followed by cleaning and exploration to understand the underlying structure. Advanced techniques, such as statistical analysis and machine learning, are then applied to extract deeper insights. Ultimately, effective data analysis not only enhances decision-making but also drives innovation and competitive advantage across various fields, including business, healthcare, finance, and technology.
@@ -19,7 +19,7 @@ The process typically begins with data collection, followed by cleaning and expl
 There are numerous tools available for data analysis, each catering to different needs and expertise levels.Here are the tools utilized during the training:
 
    1 Spreadsheet Software
-Microsoft Excel [ Download Here ].( https:\www.microsoft.com).
+Microsoft Excel [ Download Here ].(https://www.microsoft.com).
 Widely used for basic data analysis, visualization, and pivot tables
 
   2 Data Visualization Tools
@@ -47,14 +47,14 @@ Exploring Microsoft Excel functions can significantly enhance your data analysis
 
 ###  IF: Performs a logical test and returns one value for TRUE and another for FALSE. Example: =IF(G1>10, "Yes", "No")
 
-### Structured Query Language (SQL)
+### Structured Query Language
 SQL is a powerful programming language designed for managing and manipulating relational databases. It serves as the standard language for interacting with databases, allowing users to perform a wide range of operations, from querying data to updating and managing database structures. SQL enables users to retrieve specific data from databases using queries. The most common command for this is SELECT, which allows you to specify the columns and tables from which to extract data.
 
 ```select * from employee
 where salary >= 50,000
 ```
 
-SQL Comparison Operator
+## SQL Comparison Operator
 SQL comparison operators are essential tools used in queries to compare values and filter data based on specified conditions.
 These operators allow you to create conditions that can be evaluated as true or false, enabling you to refine your queries and retrieve specific datasets from a database.
 
