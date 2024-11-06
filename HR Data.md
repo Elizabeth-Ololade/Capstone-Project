@@ -22,7 +22,7 @@
 
 Employee attrition is a significant concern for organizations aiming to maintain a stable and engaged workforce. 
 This report examines the attrition rate within an organization, focusing on various factors, including business travel, departmental dynamics,
-educational background, gender, and job satisfaction. By analyzing these aspects, we aim to identify trends and provide actionable insights to enhance employee retention strategies.
+educational background, gender, and job satisfaction. By analyzing these aspects, I aim at identifying trends and provide actionable insights to enhance employee retention strategies.
 
 ## Overall Attrition Statistics
 -  Total Attrition Count: 237
