@@ -79,9 +79,9 @@ GROUP BY region;
 ### Result 
 ![CAP Sql1](https://github.com/user-attachments/assets/b00b49f5-d741-4ec6-a1f0-2502b4ed7ecc)
 
-Total Number of cancellation per region
+Top 3 regions by subscription cancellations.
 ```
-SELECT Region, COUNT(CustomerID) AS CancellationCount
+SELECT Top 3 Region, COUNT(CustomerID) AS CancellationCount
 FROM [dbo].[CustomerData]
 WHERE Canceled = 1
 GROUP BY Region
