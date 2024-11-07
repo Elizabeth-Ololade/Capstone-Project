@@ -149,7 +149,7 @@ ORDER BY highest_selling_product  DESC
 
 
 This query groups the sales data by product and retrieves the Top 1 highest selling product.
-The output provides insights of the product performing best in terms of sales.
+The output provides insights of the product performing best in terms of sales (Hat).
 
 #### Results Interpretation
 The results indicate the highest revenue-generating products, which can help in:
@@ -199,7 +199,7 @@ From the total sales visualization, several key insights can be derived:
 ### Region Generating Highest Revenue 
 
 This visualization allows business owners to quickly compare sales performance across different regions.
-It helps identify which regions are performing well and which may need attention.
+It helps identify which regions are performing well (South) and which may need attention (West).
 
 Visualization Type
 The region generating highest revenue  is presented using clustered column chart.
@@ -217,7 +217,7 @@ Each segment in the clustered columns represents a specific product,
 showing how much revenue each  region contributes to the total sales.  The south is the region generating highest revenue compare to other regions.
 
 ### **Insights** 
-From the to visualization, several key insights can be derived:
+From the data to visualization, several key insights can be derived:
 -  A retail business analysis using a clustered column chart to display region generating highest revenue, 
 it will help to understand which region are performing best.
 
@@ -231,7 +231,7 @@ This visualization clearly illustrate trends in sales data, making it easy to id
 
 Visualization Type
 The Monthly and Yearly Sales Trend is presented using line chart.
-Line chart compareed different time periods months, helping to assess performance and spot significant changes or anomalies.
+Line chart compared different time,period and  months, helping to assess performance and spot significant changes or anomalies.
 ![Cap  line chart](https://github.com/user-attachments/assets/62893b6f-76be-4289-9b9d-40d74eecfb92)
 
 ### **Explanation of the Chart** 
