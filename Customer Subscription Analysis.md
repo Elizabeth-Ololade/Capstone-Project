@@ -121,13 +121,20 @@ The subscription status encompasses both active and canceled subscriptions. The 
 ![Cap  typ by status](https://github.com/user-attachments/assets/261d9a4a-9b46-48c9-bcc5-1e6d114bff0f)
 
 **Total Active by Subscription Type**
-The visualization reveals that basic subscribers account for 63.69% of the total active subscribers, while premium subscribers make up 18.17%.
+The visualization reveals that basic subscribers account for 63.69% of the total active subscribers, while premium subscribers make up 18.17% and the least is Standard which percentage equals 18.14%.
 
 ![CAP ACT](https://github.com/user-attachments/assets/d803ca93-361e-44f2-aa0c-ed5c15f254ab)
 
-**Sum of Revenue by Region**
+**Total Canceled by subscription Type**
+The visualization  reveals that Basic subscribers has the highest  number of cancellations at 5,067, followed closely by premium with  5,064 cancellations, and Standard with 5,044 cancellations. 
 
-The visualization indicates that the West region generates the highest revenue, accounting for 24.97%.
+![Cap total can](https://github.com/user-attachments/assets/2b2932dc-6e0a-4321-abc4-e424b578f9fa)
+
+![cannnn](https://github.com/user-attachments/assets/8de0eb78-3ee7-44cb-bba1-5e3a44aed96f)
+
+
+**Sum of Revenue by Region**
+The visualization indicates that the East region generates the highest revenue, accounting for 25.11%, which is Sixteen million,nine hundred fifty-eight thousand,seven hundred sixty-three. approximately 17million.
  ![CAP Cus rev](https://github.com/user-attachments/assets/b701f764-ffa6-4d56-a1c9-85d4f3a9b308)
 
 **Sum of Revenue by Subscription Type**
